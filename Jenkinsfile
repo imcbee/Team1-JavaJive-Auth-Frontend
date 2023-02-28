@@ -1,5 +1,7 @@
 node 
-{ stage ("Checkout React Client"){git branch: 'main', url: 'https://github.com/bgoggins/team4ReactFrontend.git'
+{ 
+
+	stage ("Checkout React Client"){git branch: 'master', url: 'https://github.com/imcbee/Team1-JavaJive-Auth-Frontend.git'
     }
 
     stage ("npm install - React Client") {
