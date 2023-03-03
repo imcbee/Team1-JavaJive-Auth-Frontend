@@ -4,9 +4,9 @@ node {
         git branch: 'master', url: 'https://github.com/imcbee/Team1-JavaJive-Auth-Frontend.git'
     }
     
-    //stage ("Install dependencies - React Client") {
-    //   sh 'npm install'
-    //}
+    stage ("Install dependencies - React Client") {
+       sh 'npm install'
+    }
     
     stage ("Containerize the app-docker build - react client") {
         sh 'docker build --rm -t react:v1.0 .'
