@@ -18,7 +18,7 @@ node {
     }
     
     stage ("Run Docker container instance - react client"){
-        sh "docker run -d --rm --name react -p 3000:80 react:v1.0"
+        sh "docker run -d --name react -p 3000:80 react:v1.0"
     }
 	 
 	stage('User Acceptance Test - react client') {
